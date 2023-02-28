@@ -1,0 +1,9 @@
+[global]
+application_name = "scarlet-staff-frontend"
+infrastructure_repository = "git@gitlab.com:otakuthon/otakuthon-infrastructure-as-code.git"
+
+[environments.dev]
+kustomization_path = "k8s/scarlet-staff-frontend/overlays/dev/kustomization.yaml"
+
+[environments.prod]
+kustomization_path = "k8s/scarlet-staff-frontend/overlays/prod/kustomization.yaml"
